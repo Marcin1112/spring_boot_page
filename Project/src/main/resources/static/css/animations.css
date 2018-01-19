@@ -1,0 +1,73 @@
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#routedContent {
+	position: absolute;
+}
+
+#routedContent.ng-enter {
+	transform: translateX(-500px);
+	opacity: 0;
+	-webkit-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	-moz-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	-ms-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	-o-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+}
+
+#routedContent.ng-enter-active {
+	transform: translateX(0px);
+	opacity: 1;
+}
+
+#routedContent.ng-leave {
+	transform: translateX(0);
+	opacity: 1;
+	-webkit-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	-moz-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	-ms-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	-o-transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+	transition: all 0.5s cubic-bezier(1, .01, 0, .99);
+}
+
+#routedContent.ng-leave-active {
+	transform: translateX(500px);
+	opacity: 0;
+}
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}

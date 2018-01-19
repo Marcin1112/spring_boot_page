@@ -1,0 +1,157 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak,
+	.x-ng-cloak {
+	display: none !important;
+}
+
+h1 {
+	font-family: "Times New Roman", Times, serif;
+	color: #000;
+}
+
+h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.jumbotron_background {
+	background-image: url("/photos/analytical-chemistry.jpg");
+	min-height: 270px;
+	padding-bottom: 0;
+	margin: 0;
+}
+
+.col-sm-10>h1 {
+	text-decoration: underline;
+}
+
+.active {
+	color: #FFF;
+	background-color: #00E5E8;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.col-sm-12 {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	line-height: 0px;
+	text-align: center;
+	color: #000;
+	padding-top: 0px;
+}
+
+.about-me>.row {
+	margin: 5px;
+}
+
+.list-group>a {
+	margin: 5px;
+}
+
+.list-group>a:hover {
+	color: #6F0000;
+	font-size: 18px;
+}
+
+.about-me {
+	padding: 15px;
+	font-size: 20px;
+	background-color: #FFF;
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+}
+
+.forms {
+	padding: 15px;
+	font-size: 20px;
+	background-color: #FFF;
+	border-style: solid;
+	border-color: #000;
+	border-width: 1px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.link1 {
+	text-decoration: none;
+	font-size: 18px;
+	color: #C60000;
+}
+
+.link1:hover {
+	text-decoration: none;
+	font-size: 20px;
+	color: #004801;
+}
+
+.publications {
+	font-size: 18px;
+}
+
+.publications>ul>li {
+	margin-bottom: 10px;
+}
+
+.cv {
+	cursor: pointer;
+}
+
+#job {
+	font-size: 35px;
+}
+
+#name {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	line-height: 0px;
+	text-align: center;
+	color: #000;
+	padding-top: 60px;
+}
+
+.navbar-default {
+	color: #FFF;
+	background-color: #003F40;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+	font-size: 28px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus
+	{
+	color: #FFF;
+	background-color: #001b1c;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+
+.navbar-nav li {
+	float: none;
+	display: inline-block;
+}
+
+.view-animate-container {
+	position: relative;
+	height: 100px !important;
+	background: white;
+	border: 1px solid black;
+	height: 40px;
+	overflow: hidden;
+}
+
+.lead {
+	text-align: center;
+}
+
+.delete{
+	width: 100;
+}

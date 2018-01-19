@@ -1,0 +1,105 @@
+<div class="well lead">Aktualizacja wpisu</div>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-4">
+		<div class="container" ng-repeat="reag in reagent">
+			<form th:action="@{/finish}" method="post" class="form-horizontal">
+
+				<input type="hidden" id="id" name="id" value="{{reag.id}}">
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="name1">Nazwa
+							odczynnika: </label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="name1" name="name1"
+								value="{{reag.name}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="manufacturer">Producent:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="manufacturer"
+								name="manufacturer" value="{{reag.manufacturer}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="purity">Czystość:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="purity" name="purity"
+								value="{{reag.purity}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="amount">Ilość:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="amount" name="amount"
+								value="{{reag.amount}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="volume">Masa/Objętość:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="volume" name="volume"
+								value="{{reag.volume}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="comment">Komentarz:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="comment"
+								name="comment" value="{{reag.comment}}">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="box">Szafa: </label>
+						<div class="col-md-10">
+							<div class="col-md-7" ng-repeat="option in box">
+								<div ng-if="option.name == reag.box.name" class="row">
+									<input type="radio" name="box" value="{{option.name}}" checked>{{option.name}}
+								</div>
+								<div ng-if="option.name != reag.box.name" class="row">
+									<input type="radio" name="box" value="{{option.name}}">{{option.name}}
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-actions floatRight">
+						<input type="submit" value="Zapisz" class="btn btn-primary btn-sm" />
+						lub <a th:href="@{#!reagents}" />Anuluj</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<br />
+<br />
+<br />

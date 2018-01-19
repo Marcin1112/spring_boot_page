@@ -1,0 +1,97 @@
+<div class="well lead">Dodawanie nowego odczynnika</div>
+<div class="row">
+	<div class="col-md-2"></div>
+	<div class="col-md-4">
+		<div class="container">
+			<form th:action="@{/new}" method="post" class="form-horizontal">
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="name1">Nazwa
+							odczynnika: </label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="name1" name="name1"
+								placeholder="Podaj nazwę odczynnika"">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="manufacturer">Producent:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="manufacturer"
+								name="manufacturer" placeholder="Podaj producenta">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="purity">Czystość:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="purity" name="purity"
+								placeholder="Podaj czystość">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="amount">Ilość:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="amount" name="amount"
+								placeholder="Podaj liczbę opakowań">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="volume">Masa/Objętość:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="volume" name="volume"
+								placeholder="Podaj masę/objętość">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="comment">Komentarz:
+						</label>
+						<div class="col-md-7">
+							<input type="text" class="form-control" id="comment"
+								name="comment" placeholder="Wpisz komentarz">
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-group col-md-12">
+						<label class="col-md-2 control-lable" for="box">Szafa: </label>
+						<div class="col-md-10">
+							<div class="col-md-7" ng-repeat="option in box">
+								<input type="radio" name="box" value="{{option.name}}" checked>{{option.name}}
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="form-actions floatRight">
+						<input type="submit" value="Zapisz" class="btn btn-primary btn-sm" />
+						lub <a th:href="@{#!reagents}" />Anuluj</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<br />
+<br />
+<br />

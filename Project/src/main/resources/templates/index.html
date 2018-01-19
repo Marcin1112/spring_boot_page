@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+	ng-app='demo' ng-cloak>
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js">
+	
+</script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js">
+	
+</script>
+<script
+	src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
+<script type="text/javascript"
+	th:src="@{/js/reagentDeleteController.js}"></script>
+<title>Marcin Zabadaj</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css"
+	href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" />
+<!-- jQuery library -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{/js/hello.js}"></script>
+<script type="text/javascript" th:src="@{/js/reagentsController.js}"></script>
+<script type="text/javascript" th:src="@{/js/reagentEditController.js}"></script>
+<script type="text/javascript" th:src="@{/js/editModal.js}"></script>
+<script type="text/javascript" th:src="@{/js/reagentNewController.js}"></script>
+<script type="text/javascript" th:src="@{/js/scroll.js}"></script>
+<link rel="stylesheet" th:href="@{/css/animations.css}"
+	href="../../css/mainStyle.css" />
+<link rel="stylesheet" th:href="@{/css/mainStyle.css}"
+	href="../../css/mainStyle.css" />
+</head>
+<body>
+	<!-- Header -->
+	<div class='jumbotron jumbotron_background'>
+		<div id="name" class="row">
+			<div class="col-sm-12">
+				<h1>
+					<b>Marcin Zabadaj, M. Sc.</b>
+				</h1>
+				<h2>
+					<b>Ph.D. Student</b>
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- Menu -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+
+			<ul class="nav navbar-nav">
+				<li class><a href="#!">Home</a></li>
+				<li class><a href="#!about_me">About me</a></li>
+				<li class><a href="#!contact_me">Contact me</a></li>
+				<li class><a href="#!publications">Publications</a></li>
+				<li class><a href="#!reagents">Lab. 20</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="wrapper">
+		<div ng-view class="planet-view" id="routedContent"></div>
+	</div>
+
+</body>
+</html>

@@ -1,9 +1,9 @@
-var demo = angular.module('demo', [ "ngRoute", "ngAnimate"]);
+var demo = angular.module('demo', [ "ngRoute", "ngAnimate" ]);
 
 demo.run(function($rootScope) {
-    $rootScope.data = {};
-    $rootScope.data.reagent = 0;
- });
+	$rootScope.data = {};
+	$rootScope.data.reagent = 0;
+});
 
 demo.config(function($routeProvider) {
 	$routeProvider.when("/", {

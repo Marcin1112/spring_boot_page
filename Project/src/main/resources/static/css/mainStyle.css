@@ -13,8 +13,8 @@ h2 {
 }
 
 .jumbotron_background {
-	background-image: url("/photos/backgroundImage.jpg");
-	min-height: 270px;
+	background-image: url("/photos/salesforce.jpg");
+	min-height: 320px;
 	padding-bottom: 0;
 	margin: 0;
 }
@@ -34,7 +34,7 @@ h2 {
 	font-style: italic;
 	line-height: 0px;
 	text-align: center;
-	color: #c2d1ef;
+	color: #000;
 	padding-top: 0px;
 }
 

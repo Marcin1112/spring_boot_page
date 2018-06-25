@@ -1,5 +1,6 @@
 demo.controller('reagentDeleteController', function($scope, $rootScope, $http) {
 	$scope.aaa = '/rest/reagents/' + $rootScope.data.reagent;
+	console.log($scope.aaa);
 	$http({
 		method : 'GET',
 		url : '/rest/reagents/' + $rootScope.data.reagent

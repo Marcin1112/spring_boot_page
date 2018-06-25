@@ -13,7 +13,7 @@ h2 {
 }
 
 .jumbotron_background {
-	background-image: url("/photos/analytical-chemistry.jpg");
+	background-image: url("/photos/backgroundImage.jpg");
 	min-height: 270px;
 	padding-bottom: 0;
 	margin: 0;
@@ -34,7 +34,7 @@ h2 {
 	font-style: italic;
 	line-height: 0px;
 	text-align: center;
-	color: #000;
+	color: #c2d1ef;
 	padding-top: 0px;
 }
 
@@ -111,7 +111,7 @@ h2 {
 
 .navbar-default {
 	color: #FFF;
-	background-color: #003F40;
+	background-color: #02202B;
 	padding-left: 10%;
 	padding-right: 10%;
 }
